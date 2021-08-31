@@ -26,6 +26,8 @@ function get_zodiac_switch(year) {
             break;
         case 11: return 'sheep';
             break;
+        default:
+            break;
     }
 }
 //แบบ function ที่อ้างถึง index ของ array
