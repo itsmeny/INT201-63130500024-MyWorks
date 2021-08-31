@@ -1,4 +1,4 @@
-// แบบฝึกหัด 2 Body Mass Index (BMI) Calculator Program
+// แบบฝึกหัด 3 Body Mass Index (BMI) Calculator Program
 
 function BMI(weight, w_measurement_units, height, h_measurement_units) { // ฟังก์ชั่นที่ใช้คำนวณค่า BMI โดยจะรับค่า น้ำหนัก , หน่วยวัดของน้ำหนัก , ความสูง , หน่วยวัดของความสูง
 
