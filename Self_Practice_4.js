@@ -2,20 +2,20 @@
 
 function BMI(weight, w_measurement_units, height, h_measurement_units) { // ฟังก์ชั่นที่ใช้คำนวณค่า BMI โดยจะรับค่า น้ำหนัก , หน่วยวัดของน้ำหนัก , ความสูง , หน่วยวัดของความสูง
 
-    const pound2kilogram = 0.453592; // กำหนดค่า 1 pound = 0.453592 kilogram
-    const inch2meter = 0.0254; // กำหนดค่า 1 inch = 0.0254 meter
-    const meter2cm = 100; // กำหนดค่า 1 meter = 100 cm
+    const POUND2KILOGRAM = 0.453592; // กำหนดค่า 1 pound = 0.453592 kilogram
+    const INCH2METER = 0.0254; // กำหนดค่า 1 inch = 0.0254 meter
+    const METER2CM = 100; // กำหนดค่า 1 meter = 100 cm
 
     if (h_measurement_units.toLowerCase() == 'inch') {
-        height = height * inch2meter; // ถ้ารับหน่วยค่าความสูงมาเป็น inch ก็แปลงเป็น meter
+        height = height * INCH2METER; // ถ้ารับหน่วยค่าความสูงมาเป็น inch ก็แปลงเป็น meter
     } else if (h_measurement_units.toLowerCase() == 'meter') {
         // ไม่ต้องทำอะไรเพราะรับหน่วยค่าความสูงมาเป็น meter
     } else if (h_measurement_units.toLowerCase() == 'centimeter') {
-        height = height / meter2cm; // ถ้ารับหน่วยค่าความสูงมาเป็น centimeter ก็แปลงเป็น meter
+        height = height / METER2CM; // ถ้ารับหน่วยค่าความสูงมาเป็น centimeter ก็แปลงเป็น meter
     }
 
     if (w_measurement_units.toLowerCase() == 'pound') {
-        weight = weight * pound2kilogram; // ถ้ารับค่าน้ำหนักมาเป็น pound ก็แปลงเป็น kilogram
+        weight = weight * POUND2KILOGRAM; // ถ้ารับค่าน้ำหนักมาเป็น pound ก็แปลงเป็น kilogram
     } else if (w_measurement_units.toLowerCase() == 'kilogram') {
         // ไม่ต้องทำอะไรเพราะหน่วยที่รับมาเป็น kilogram
     }
